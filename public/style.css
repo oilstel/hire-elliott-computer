@@ -43,6 +43,12 @@ hr {
 }
 
 /* Layout */
+.stamp {
+    background: yellowgreen;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
 main {
     /* max-width: 800px;
     margin: 0 auto; */
