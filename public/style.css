@@ -1,0 +1,108 @@
+*, *:before, *:after { box-sizing: border-box; }
+body {
+    padding: 0;
+    margin: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-text-size-adjust: none; 
+}
+h1, h2, h3, h4, p, ul, ol, table, th, td, hr {
+    padding: 0;
+    margin: 1em 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+h2 {font-weight: bold;}
+h2:first-child, li:first-child, p:first-child, label:first-child {
+    margin-top: 0;
+}
+a {color: #000; text-decoration: underline;}
+ul {
+    list-style-position: outside;
+    padding-left: 0.8em;
+    /* list-style-type: none; */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+td {
+    vertical-align: top;
+}
+hr {
+    border: 0;
+    border-bottom: 1px solid #000;
+}
+
+/* Layout */
+main {
+    /* max-width: 800px;
+    margin: 0 auto; */
+}
+/* section h2 {
+    text-align: center;
+} */
+.recent-projects, .recent-projects a {
+    color: #fcff4d;
+}
+
+td, .box {
+    padding: 8px;
+}
+section {
+    margin: 3em 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+@media(max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+.grid > * {
+}
+.box {
+    border: 1px solid #000;
+}
+.box ul {
+    margin: 0;
+}
+
+/* Form */
+label, input, select {
+    display: block;  
+    margin: 0.5em 0;
+}
+textarea, input[type="text"], input[type="email"] {
+    padding: 4px;
+    border: 1px solid #000000;
+}
+label {
+    line-height: 1.5em;
+}
+textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+}
+select {
+    font-size: 12px !important;
+}
+.two-up {
+    display: flex;
+    flex-flow: row wrap;
+}
+.two-up > * {
+    margin-right: 10px;
+}
