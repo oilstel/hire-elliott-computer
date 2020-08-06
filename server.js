@@ -49,26 +49,8 @@ timeline: ${req.body.project_timeline}
         console.error(error.response.body)
     }
   });
-  
-  // const request = {
-  //     method: 'PUT',
-  //     url: 'https://api.sendgrid.com/v3/marketing/contacts',
-  //     body: `{"list_ids":["43b30c48-42c1-4058-a982-603d03fbf205"], "contacts":[{"email": "${req.body.email}"}]}`
-  // };
-
-  // client.request(request)
-  //   .then(([response, body]) => {
-  //     console.log(response.statusCode);
-  //     console.log(response.body);
-  //     res.send({"subscribed": true});
-  //   }).catch(err => {
-  //     console.log(err.statusCode);
-  //     console.log(err.body);
-  //     res.send({"message": false});
-  //   });
 });
 
-// listen for requests :)
 const listener = app.listen(process.env.PORT, () => {
   console.log("Your server is listening on port " + listener.address().port);
 });
